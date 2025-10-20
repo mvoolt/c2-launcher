@@ -1,0 +1,35 @@
+// Dedicated server launcher resources
+
+#include <winver.h>
+
+// Launcher headers
+#include "DedicatedServer/Resources.h"
+
+#include "config.h"
+
+IDI_ICON ICON "DedicatedServerIcon.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     C1LAUNCHER_VERSION_MAJOR,C1LAUNCHER_VERSION_MINOR,0,0
+PRODUCTVERSION  C1LAUNCHER_VERSION_MAJOR,C1LAUNCHER_VERSION_MINOR,0,0
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "000904B0"
+		BEGIN
+			VALUE "FileDescription",  "Crysis 2 64-bit Dedicated Server Launcher"
+			VALUE "FileVersion",      C2LAUNCHER_VERSION_STRING
+			VALUE "InternalName",     "Crysis2DedicatedServer"
+			VALUE "OriginalFilename", "Crysis2DedicatedServer.exe"
+			VALUE "ProductName",      "C2-Launcher"
+			VALUE "ProductVersion",   C2LAUNCHER_VERSION_STRING
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0009, 0x04B0
+	END
+END

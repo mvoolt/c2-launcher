@@ -1,0 +1,41 @@
+// Game launcher resources
+
+#include <winver.h>
+
+// Launcher headers
+#include "Game/Resources.h"
+
+#include "config.h"
+
+IDI_ICON ICON "GameIcon.ico"
+
+IDC_CURSOR_AMBER CURSOR "CursorAmber.cur"
+IDC_CURSOR_BLUE  CURSOR "CursorBlue.cur"
+IDC_CURSOR_GREEN CURSOR "CursorGreen.cur"
+IDC_CURSOR_RED   CURSOR "CursorRed.cur"
+IDC_CURSOR_WHITE CURSOR "CursorWhite.cur"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     C2LAUNCHER_VERSION_MAJOR,C2LAUNCHER_VERSION_MINOR,0,0
+PRODUCTVERSION  C2LAUNCHER_VERSION_MAJOR,C2LAUNCHER_VERSION_MINOR,0,0
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "000904B0"
+		BEGIN
+			VALUE "FileDescription",  "Crysis 2 64-bit Game Launcher"
+			VALUE "FileVersion",      C2LAUNCHER_VERSION_STRING
+			VALUE "InternalName",     "Crysis2"
+			VALUE "OriginalFilename", "Crysis2.exe"
+			VALUE "ProductName",      "C2-Launcher"
+			VALUE "ProductVersion",   C2LAUNCHER_VERSION_STRING
+		END
+	END
+
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0009, 0x04B0
+	END
+END
