@@ -13,6 +13,7 @@ Public releases are built with Visual Studio 2019.
 # How to use
 1. download [bin64.7z](https://github.com/mvoolt/c2-launcher/releases/download/binaries/bin64.7z) and extract onto your Crysis 2 game folder
 2. download latest release from https://github.com/mvoolt/c2-launcher/releases/latest and extract onto your Crysis 2 game folder
+2.1. **If you already have done first step (i.e. you already have all DLLs in bin64/ folder) then skip 1st step and do this
 3. launch Crysis2.exe found in bin64/ folder
 4. ???
 5. PROFIT!
@@ -26,4 +27,5 @@ Public releases are built with Visual Studio 2019.
 
 # Thanks
 ccomrade for [c1-launcher](https://github.com/ccomrade/c1-launcher) which is used as basis for this project. c1-launcher has been hard forked from commit d37f513 to easily modify for this project.
+
 rafalh for FunHook (`vendor/funhook`) which was originally made for [Dash Faction](https://github.com/rafalh/dashfaction). Dash Faction is licensed under Mozilla Public License 2.0.
